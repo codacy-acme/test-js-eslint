@@ -1,7 +1,3 @@
 {
-  "extends": "@serverless/eslint-config/node",
-  "root": true,
-  "rules": {
-    "no-console": "off"
-  }
+  "extends": ["react-app", "plugin:prettier/recommended"]
 }
