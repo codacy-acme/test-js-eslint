@@ -1,6 +1,6 @@
 console.log("hello, world");
 
-if(true)
+if(true){
 	console.log("used tab")
-
+}
   
