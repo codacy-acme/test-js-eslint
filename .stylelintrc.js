@@ -1,4 +1,4 @@
-const idiomaticOrder = require('stylelint-config-idiomatic-order').rules['order/properties-order'];
+const idiomaticOrder = require('stylelint-config-idiomatic-order');
 
 module.exports = {
 
