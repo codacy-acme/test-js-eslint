@@ -1,8 +1,4 @@
-const idiomaticOrder = require('stylelint-config-idiomatic-order').rules['order/properties-order'];
 
-idiomaticOrder[0].unshift('content');
-
- 
 
 module.exports = {
 
@@ -84,7 +80,7 @@ module.exports = {
 
     ],
 
-    'order/properties-order': idiomaticOrder,
+    
 
   },
 
