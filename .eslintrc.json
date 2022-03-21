@@ -1,3 +1,96 @@
 {
-  "extends": ["react-app", "plugin:prettier/recommended"]
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsonc/recommended-with-jsonc"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "spellcheck"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "spellcheck/spell-checker": [
+      1,
+      {
+        "comments": true,
+        "strings": true,
+        "identifiers": true,
+        "templates": true,
+        "lang": "en_US",
+        "skipWords": [
+          "applify",
+          "Akveo",
+          "txt",
+          "echarts",
+          "classlist",
+          "mdi",
+          "Gmail",
+          "Joi",
+          "jpg",
+          "md",
+          "msg",
+          "otp",
+          "png",
+          "req",
+          "res",
+          "Sequelize",
+          "sequelize",
+          "sha",
+          "sms",
+          "Sms",
+          "Twilio",
+          "utf8"
+        ],
+        "skipIfMatch": [
+          "http://[^s]*",
+          "https://[^s]*",
+          "^[-\\w]+[-\\w\\.]+$"
+        ],
+        "skipWordIfMatch": [
+          "^foobar.*$"
+        ],
+        "minLength": 3
+      }
+    ]
+  }
 }
